@@ -1,0 +1,58 @@
+.X{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+body{
+margin:0;
+}
+
+.login{
+  background-color:rgb(227, 227, 227);
+
+  width:50vw;
+     height:85%;
+  color:black;
+  margin-top: 40px;
+  margin-bottom:40px;
+  align-content: center;
+  border-radius: 20px;
+  padding-bottom: 5%;
+
+}
+.loginPasswordEmail{
+padding:10px;
+}
+.loginPasswordEmail input{
+width:25vw;
+
+
+}
+.login button{
+
+   border: none;
+   color: white;
+   padding: 7px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+
+   margin: 4px 2px;
+   cursor: pointer;
+   width:30vw;
+
+}
+
+
+
+.loginbtn:hover{
+transform: scale(1.1);
+}
+.LoginInfo{
+margin-top: 10%;
+display:grid;
+
+}
+.login a{
+text-decoration: none;
+}
