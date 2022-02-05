@@ -69,3 +69,72 @@
     background-color: aquamarine;
     transform: translate(-15em, -3em);
 }
+@keyframes big_box {
+    0% {
+        background-color: rgba(150, 178, 197, 0.2);
+    }
+    12% {
+        background-color: rgba(150, 178, 197, 0.4);
+    }
+    25% {
+        background-color: rgba(170, 215, 245, 0.5);
+    }
+    50% {
+        background-color: rgba(150, 178, 197, 0.6);
+    }
+    75% {
+        background-color: rgba(150, 178, 197, 0.7);
+    }
+    100% {
+        background-color: rgba(150, 178, 197, .8);
+    }
+}
+
+@keyframes cover_photo {
+    0% {
+        background: url("../css/survey1.jpeg");
+    }
+    40% {
+        background: url("../css/survey3.jpg");
+    }
+    60% {
+        background: url("../css/survey4.jpg");
+    }
+    100% {
+        background: url("../css/survey6.jpg");
+    }
+}
+
+#askInfo {
+    text-align: left;
+    width: 4em;
+    float: left;
+}
+
+#giveInfo {
+    width: 7em;
+    float: right;
+    ;
+}
+
+.p1 {
+    font-size: 1.2em;
+    text-decoration: wavey;
+    text-decoration-color: snow;
+    color: blue;
+    background-color: antiquewhite
+}
+
+.p2 {
+    font-size: 1em important!;
+    color: violet important!;
+    border: 2px brown dashed;
+    background-color: antiquewhite;
+}
+
+pre {
+    margin-left: -3em;
+    font-size: 1em;
+    color: brown;
+}
+
