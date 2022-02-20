@@ -1,230 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile</title>
+    <meta name="viewport" content="width=device-width,initial,scale=1">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <title>Create Survey</title>
+    <link rel="stylesheet" href="../css/create_survey.css">
+    <link rel="stylesheet" href="../css/profileG.css">
 </head>
 
 <body topmargin=0px leftmargin=0px rightmargin=0px bottommargin=0px>
-    <!-- the header of the page -->
-    <table width=100% style="background-color:rgb(41, 24, 24)">
-        <tr>
-            <td>
-              <a href="../index.html" ><img src="../../logo/logo1.png" alt="logo image " height=100px></a>
-            </td>
-            <td align=right>
-                <div class="navigatiobar">
-                    <a href="../index.html" style="color:white;text-decoration:none;font-size:20px;"> Home &nbsp&nbsp&nbsp  </a>
-                    <a href="../index.html#aboutus" style="color:white;text-decoration:none;font-size:20px;">About Us &nbsp&nbsp&nbsp</a>
-                    <a href="contac page.html" style="color:white;text-decoration:none;font-size:20px;">Contact Us &nbsp&nbsp&nbsp</a>
-                    <a href="pages/log in.html" style="color:white;text-decoration:none;font-size:20px;">Login &nbsp&nbsp&nbsp </a>
-                    <a href="pages/registration page.html" style="color:white;text-decoration:none; font-size:20px;">Sign Up &nbsp&nbsp&nbsp </a>
-                </div>
-            </td>
-        </tr>
-    </table>
-    <!--cover photo and profile photo inserting -->
-    <svg width=100% height="600">
-            <pattern id="img1" patternUnits="userSpaceOnUse" width="1200" height="539px">
-              <image href="../images/cover.jpg"  />
-            </pattern>
-            <pattern id="img2" patternUnits="userSpaceOnUse" x="0" y="0" width="420px" height="610px">
-                <image href="../images/mati.jpg"  x="0" y="0" width="370px" height="730px">/>
-              </pattern>
-        <rect y="10" rx="200" ry="300"  width=100% height="400"
-        style="fill:rgb(54, 48, 48)"></rect>
-      <foreignObject style="background-color: rgb(255, 255, 255);" x="1000" y="330" width="200" height="80">
-                <lable> <input type="file" name="photo" > <h2 style="color: rgb(10, 10, 10);">Upload Photo</h2></lable>
-    </foreignObject>
-            <ellipse cx="600" cy="370" rx="150" ry="170" fill="url(#img2)">
-            </ellipse>
-      </svg>
-    <hr style="width:50%" , size="20px" , color=gray>
+    <header>
+        <a class="logo" href="../index.html"><img src="../../logo/logo1.png" alt="logo image " height=100px></a>
+        <nav class="navigationBar">
+            <ul class="nav">
 
-    <svg width=100% height="1900px" style="background-color: rgb(255, 255, 255)">
-    <foreignObject  bgcolor="white" style="background-color: rgb(70, 70, 70)";" y="30" x="30" width=60% height=30%>
-         <!--infrmation about the customer -->
-         <h2  style="border-radius:20px;background-color:rgb(58, 59, 59);background-position:center;width:400px;font-size:35px;color:white;" align="center">  Personal inofrmaions</h2>
-        <table width=80% height=80% bgcolor="white" align="center">
-            <tr width=100%>
-                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px; ">Full name</td>
-                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px">Kebede Betamkebede</td>
-            </tr>
-            <tr>
-                <td align=left width=50% height="50px" style="gray;font-weight:1000; font-size:25px">Address</td>
-                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px">Addis Ababa Ethiopa <br>POBox 4533</td>
-            </tr>
-            <tr>
-                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px">User name</td>
-                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px"><a href="Survey@kebede">Survey@kebede</a></td>
-            </tr>
-            <tr>
-                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px">email:</td>
-                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px"><a href="emailto:Kebede@gmail.com">kebede@gmail.com</a></td>
-            </tr>
-            <tr>
-                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px">Phone number</td>
-                <td align=left width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px"><a href="tel:51 893 32 23">251 73 99 71 33</a></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <details>
-                        <summary>More</summary>
-                        <table table width=80% bgcolor="white" align="left">
-                            <tr>
-                                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px">Birth date</td>
-                                <td align=left width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px">2000/march/26</td>
+                <li><a href="../index.html"> Home </a></li>
+                <li><a href="../index.html#aboutus">About Us </a></li>
+                <li><a href="contac page.html">Contact Us </a></li>
+                <!-- <li><a href="pages/log in.html">Login  </a></li> -->
+                <li><a href="registration page.html">Sign Up </a></li>
+            </ul>
 
-                            </tr>
-                            <tr>
-                                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px">interested in</td>
-                                <td align=left width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px">watching movies</td>
-                            </tr>
-            </tr>
-            <tr>
-                <td align=left width=50% height="50px" style="font-weight:1000; font-size:25px">sex </td>
-                <td align=left width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px">Male</td>
-            </tr>
-            </table>
-            </details>
-        </table>
-    </foreignObject>
-    <foreignObject style="background-color: rgb(70, 70, 70)";" y="200" x="960" width=25% height=40%>
-         <h2  style="border-radius:20px;background-color:rgb(58, 59, 59);background-position:center;width:400px;font-size:35px;color:white;" align="center"> Taken surveys</h2>
-        <dfn>
-          <dt align=center width=50% height="200px" style="font-size:30px;font-weight:1000; font-size:25px;color:brown">From AASTU university</dt>
-            <dd>
-                <ol type="I">
-                    <li align=center width=50% height="200px" style="font-size:20px;font-weight:1000; font-size:25px">Student achievment in AASTU by staff councels</li>
-                    <li align=center width=50% height="200px" style="font-size:20px;font-weight:1000; font-size:25px">Student engagement in extracalicura activity in AASTU</li>
-                </ol>
-            </dd>
+        </nav>
+        <a class="loginLink" href="log in.html">Login  </a>
+    </header>
 
-            <dt align=center width=50% height="200px" style="font-size:20px;font-weight:1000; font-size:25px;color:brown"> From saint George beer Factory</dt>
-                <dd>
-                    <ol type="I">
-                        <li align=center width=50% height="200px" style="font-size:20px;font-weight:1000; font-size:25px">
-                            satisfaction level
-                        </li>
-                        <li align=center width=50% height="200px" style="font-size:20px;font-weight:1000; font-size:25px">
-                            which beer is best for you
-                        </li>
-                    </ol>
-                </dd>
-      </dfn>
-    </foreignObject>
-    <foreignObject style="background-color: rgb(136, 136, 136);" y="700" x="40" width=60% height=25%>
-         <h2  style="border-radius:20px;background-color:rgb(58, 59, 59);background-position:center;width:400px;font-size:35px;color:white;" align="center"> your portfolio</h2>
-        <p align=center width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px"><pre>       I am...
+    <div id="coverphoto">
+        <figure id="figure">
+            <image src="../images/mati.jpg" id="photo"></image>
+        </figure>
+        <form action="" method="post" id="profilChange">
+            <label for="file1">update photo</label>
+            <input type="file" name="profile" id="file1">
+        </form>
+    </div>
+    <div class="container1" id="cont2">
+        <div class="box" id="box1">
+            <h2> Personal inofrmaions</h2>
+            <div id="askInfo">
+                <p class="p1">Full name </p>
+                <p class="p1">Address<br> POBox
+                </p>
+                <p class="p1">User name</p>
+                <p class="p1">email:</p>
+                <p class="p1">Phone number</p>
+                <p class="p1"> Birth date</p>
+                <p class="p1">interested in</p>
+                <p class="p1">sex </p>
+            </div>
+            <div id="giveInfo">
+                <p class="p2"> Kebede Betamkebede</p>
+                <p class="p2"> Addis Ababa Ethiopa <br> 4533</p>
+                <p class="p2"><a href="Survey@kebede">Survey@kebede</a></p>
+                <p class="p2"><a href="emailto:Kebede@gmail.com">kebede@gmail.com</a></p>
+                <p class="p2"><a href="tel:51 893 32 23">251 73 99 71 33</a></p>
+                <p class="p2">2000/march/26</p>
+                <p class="p2"> watching movies</p>
+                <p class="p2"> Male</p>
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <h2> Taken surveys</h2>
+            <dfn>
+             <dt >From AASTU university</dt>
+               <dd>
+                   <ol type="I ">
+                       <li>Student achievment in AASTU by staff councels</li>
+                       <li>Student engagement in extracalicura activity in AASTU</li>
+                   </ol>
+               </dd>
+
+               <dt> From saint George beer Factory</dt>
+                   <dd>
+                       <ol type="I ">
+                           <li>
+                               satisfaction level
+                           </li>
+                           <li>
+                               which beer is best for you
+                           </li>
+                       </ol>
+                   </dd>
+         </dfn>
+        </div>
+        <div class="box " id="box3">
+            <h2> your portfolio</h2>
+            <pre>       I am...
         .
         .
         .
-        .
-        .
-        .
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         thank you
-    </pre></p>
-    </foreignObject>
-
-    <foreignObject style="background-color: rgb(70, 70, 70)";" y="1100" x="960" width=25% height=30%>
-         <h2  style="border-radius:20px;background-color:rgb(58, 59, 59);background-position:center;width:400px;font-size:35px;color:white;" align="center"> Created surveys</h2>
-        <dfn>
-    <dt align=center width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px;color:brown">From AASTU university</dt>
-      <dd>
-          <ol type="I">
-              <li align=center width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px;">Student achievment in AASTU by staff councels</li>
-              <li align=center width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px">Student engagement in extracalicura activity in AASTU</li>
-          </ol>
-      </dd>
-      <dt align=center width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px;color:brown"> From saint George beer Factory
+    </pre>
+        </div>
+        <div class="box" id="box4">
+            <h2> Created surveys</h2>
+            <dfn>
+        <dt >From AASTU university</dt>
           <dd>
               <ol type="I">
-                  <li align=center width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px">
-                      satisfaction level
-                  </li>
-                  <li align=center width=50% height="50px" style="font-size:20px;font-weight:1000; font-size:25px">
-                      which beer is best for you
-                  </li>
+                  <li >Student achievment in AASTU by staff councels</li>
+                  <li >Student engagement in extracalicura activity in AASTU</li>
               </ol>
           </dd>
-      </dt>
-</dfn>
-    </foreignobject>
-    <foreignobject x=300 y=1200 width=400px height=250>
-         <h2  style="border-radius:20px;background-color:rgb(26, 25, 25);background-position:center;width:400px;font-size:35px;color:white;" align="center">your status on our service </h2>
-    </foreignObject>
-    <foreignobject x=30 y=1300 width="800px" height=250>
-        <p  style="background-color:rgb(255, 255, 255);background-position:center;width:800px;font-size:35px;color:rgb(0, 0, 0);" align="left">&nbsp &nbsp &nbsp &nbsp Bronze Level &nbsp &nbsp &nbsp &nbsp Silver Level &nbsp &nbsp &nbsp &nbsp &nbsp Gold Level </p>
-   </foreignObject>
-   <foreignobject x=150 y=1600 width="400" height=250>
-    <img src="../images/right1.png" width="80px" height="60px" alt="your in this level">
-    </foreignObject>
-        <pattern id="img3" patternUnits="userSpaceOnUse" width="200" height="250">
-            <image href="../images/bronze1.jpg" x="0" y="0"  />
-            </pattern>
-            <pattern id="img4" patternUnits="userSpaceOnUse" width="205" height="200">
-                <image href="../images/silver1.jpg" x="0" y="0"   />
-            </pattern>
-            <pattern id="img5" patternUnits="userSpaceOnUse" width="200" height="225">
-                <image href="../images/gold1.jpg" x="0" y="0"  />
-            </pattern>
-    <ellipse id="bronze" cx="200" cy="1500" rx="100" ry="100" style="fill:url(#img3)">
-    </ellipse>
-    <ellipse cx="450" cy="1500" rx="100" ry="100" style="fill:url(#img4)">
-    </ellipse>
-    <ellipse cx="700" cy="1500" rx="100" ry="100" style="fill:url(#img5)">
-    </ellipse>
+          <dt > From saint George beer Factory
+              <dd>
+                  <ol type="I">
+                      <li >
+                          satisfaction level
+                      </li>
+                      <li >
+                          which beer is best for you
+                      </li>
+                  </ol>
+              </dd>
+          </dt>
+    </dfn></div>
+        <div class="box" id="box5">
+            <h2>Your level one</h2>
+            <figure>
+                <image src="C:\Users\Mehari\Documents\compiler\html\New folder\Internet_programing_project\profile\images\bronze1.jpg" widht="70em" height="60em" idth="60em" height="40em" />
+                <figcaption>bronze level</figcaption>
 
-    <rect x=0 y=1800 width=100% height=100 style="fill:rgb(255, 255, 255)">
-    </rect>
-    <foreignobject x=0 y=1650 width=100% height=300px>
-         <h2  height="100px" style="border-radius:20px;background-color:rgb(58, 59, 59);background-position:center;width:400px;font-size:35px;color:white;" align="center">your balance</h2>
-        <table border=1 width=100% height=200px>
-            <tr width=100% height=25%>
-                <td align=center width=50% height=25% >Net balance</td>
-                <td align=center width=50%  height=25%>Total earned balance</td>
-            </tr>
-            <tr width=100% height=30%>
-                <td align=center width=50% height=25% >
-                    500$
-                </td>
-                <td align=center width=50% height=25% >
-                    1000$
-                </td>
-            </tr>
-        </table>
-    </foreignobject>
-    </svg>
-    <footer width=100% height=400px style="background-color:rgb(41, 24, 24)">
-        <table>
-            <td width="43%"></td>
-            <td width="60%">
-                <a href="https://www.facebook.com/"> <img src="../images/facebook.png" alt="" width="40px"> </a>
-                <a href="https://www.instagram.com/"> <img src="../images/insta.png" alt="" width="45px"> </a>
-                <a href="#"> <img src="../images/gmai.png" alt="" width="45px"> </a>
-            </td>
-            <td width="30%"></td>
+                <image src="../images/silver1.jpg" widht="200em" height="100em" />
 
-        </table>
-        <p align=center style="color:white">© Copyright 2021 Utopia survey. All rights reserved. <br>
-            <a href="#r">hegree@example.com</a></p>
-    </footer>
+                <figcaption>Silver level</figcaption>
+                <image src="../images/gold1.jpg" widht="200em" height="100em" />
+                <figcaption>Gold level</figcaption>
+            </figure>
+
+        </div>
+        <div class="box" id="box6">
+            <table border=1 width=100% height=200px>
+                <tr width=100% height=25%>
+                    <td align=center width=50% height=25%>Net balance</td>
+                    <td align=center width=50% height=25%>Total earned balance</td>
+                </tr>
+                <tr width=100% height=30%>
+                    <td align=center width=50% height=25%>
+                        500$
+                    </td>
+                    <td align=center width=50% height=25%>
+                        1000$
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <form action "" method="post" name="try">
+        <fieldset>
+            <legend>Try</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="text">
+            <br>
+            <label for="submit">Submit</label>
+            <input type="submit" id="submit" value="submit" id="submit">
+        </fieldset>
+    </form>
+
 </body>
 
 </html>
