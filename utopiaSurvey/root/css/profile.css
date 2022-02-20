@@ -1,3 +1,24 @@
+.showProfile {
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 10% 0% 10% 0%;
+    margin-left: 40%;
+    background-color: rgb(232, 235, 233);
+    width: 20%;
+    border-radius: 10px;
+}
+
+.showProfile input {
+    margin: 5px;
+    display: block;
+}
+
+.container {
+    display: none;
+    visibility: hidden;
+}
+
 .container1 {
     width: 100%;
     height: auto;
@@ -8,11 +29,11 @@
     align-content: start;
     grid-column-gap: 40px;
     grid-row-gap: 3em;
-    animation: big_box 10s linear 0s infinite alternate;
+    animation: big_box 10s ease-in 0s infinite alternate;
 }
 
 .box {
-    animation: big_box 0s linear 0s infinite alternate-reverse;
+    animation: big_box 5s linear 0s infinite alternate-reverse;
 }
 
 #box1 {
@@ -39,17 +60,17 @@
     margin-bottom: 5em;
     border: aqua;
     align-content: center;
-    animation: cover_photo 30s ease-in-out -4s infinite normal;
+    animation: cover_photo 20s ease-out -1s infinite normal;
 }
 
 #photo {
     width: 10em;
     height: 10em;
-    margin-left: 10em;
+    margin-left: 27em;
     margin-top: 3em;
     border: 9px black;
     border-radius: 50%;
-    transition: all 1s linear;
+    transition: all 2s linear;
 }
 
 #file1 {
@@ -59,7 +80,7 @@
 #photo:hover {
     width: 15em;
     height: 15em;
-    margin-left: 10em;
+    margin-left: 27em;
     margin-top: 0em;
     border: 9px #FFF3E0 dashed;
     border-radius: 25%;
@@ -69,72 +90,106 @@
     background-color: aquamarine;
     transform: translate(-15em, -3em);
 }
+
 @keyframes big_box {
     0% {
-        background-color: rgba(150, 178, 197, 0.2);
+        background-color: rgba(0, 0, 0, 0);
     }
     12% {
-        background-color: rgba(150, 178, 197, 0.4);
+        background-color: rgba(0, 0, 0, 0.1);
     }
     25% {
-        background-color: rgba(170, 215, 245, 0.5);
+        background-color: rgba(0, 0, 0, 0.2);
     }
     50% {
-        background-color: rgba(150, 178, 197, 0.6);
+        background-color: rgba(0, 0, 0, 0.3);
     }
     75% {
-        background-color: rgba(150, 178, 197, 0.7);
+        background-color: rgba(0, 0, 0, 0.4);
     }
     100% {
-        background-color: rgba(150, 178, 197, .8);
+        background-color: rgba(0, 0, 0, .5);
     }
 }
 
 @keyframes cover_photo {
     0% {
-        background: url("../css/survey1.jpeg");
+        background: url("../images/survey1.jpeg");
+    }
+    20% {
+        background: url("../images/survey2.jeg");
     }
     40% {
-        background: url("../css/survey3.jpg");
+        background: url("../images/survey3.jpg");
     }
     60% {
-        background: url("../css/survey4.jpg");
+        background: url("../images/survey4.jpg");
+    }
+    80% {
+        background: url("../images/survey5.jpg");
     }
     100% {
-        background: url("../css/survey6.jpg");
+        background: url("../images/survey6.jpg");
     }
 }
 
 #askInfo {
+    padding: 20px;
     text-align: left;
-    width: 4em;
+    margin-right: 15em;
+    width: 5em;
     float: left;
 }
 
 #giveInfo {
+    padding: 20px;
     width: 7em;
-    float: right;
-    ;
+    float: left;
 }
 
 .p1 {
+    Padding: 10px;
+    display: inline-block;
     font-size: 1.2em;
+    width: 15em;
+    Padding: 10px;
     text-decoration: wavey;
     text-decoration-color: snow;
-    color: blue;
-    background-color: antiquewhite
+    color: rgb(21, 203, 248);
+    background-color: rgba(99, 52, 99, 0.2);
 }
 
 .p2 {
-    font-size: 1em important!;
-    color: violet important!;
-    border: 2px brown dashed;
-    background-color: antiquewhite;
+    Padding: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    width: 10em;
+    Padding: 10px;
+    text-decoration: wavey;
+    text-decoration-color: snow;
+    color: rgb(255, 255, 255);
+    background-color: rgba(99, 52, 99, 0.2);
 }
 
-pre {
-    margin-left: -3em;
-    font-size: 1em;
-    color: brown;
+#table {
+    border: 7px solid rgba(23, 120, 231, 0.5);
+    width: 100%;
+    height: 200px;
 }
 
+td {
+    text-decoration: wavey;
+    text-decoration-color: snow;
+    font-size: 36px;
+    font-family: Georgia;
+    border: 7px solid rgba(23, 120, 231, 0.5);
+}
+
+th {
+    text-decoration: wavey;
+    text-decoration-color: snow;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Georgia;
+    border: 7px solid rgba(23, 120, 231, 0.5);
+}
