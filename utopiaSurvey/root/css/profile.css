@@ -1,24 +1,26 @@
-.showProfile {
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    margin: 10% 0% 10% 0%;
-    margin-left: 40%;
-    background-color: rgb(232, 235, 233);
-    width: 20%;
-    border-radius: 10px;
+.showProfile{
+align-items: center;
+justify-content: center;
+padding: 30px;
+margin:10% 0% 10% 0%;
+margin-left: 40%;
+background-color: rgb(232, 235, 233);
+width:20%;
+border-radius: 10px;
+
 }
 
-.showProfile input {
-    margin: 5px;
-    display: block;
-}
+.showProfile input{
 
-.container {
-    display: none;
-    visibility: hidden;
-}
+margin:5px;
+display: block;
 
+}
+.container{
+display: none;
+visibility: hidden;
+
+}
 .container1 {
     width: 100%;
     height: auto;
@@ -170,7 +172,6 @@
     color: rgb(255, 255, 255);
     background-color: rgba(99, 52, 99, 0.2);
 }
-
 #table {
     border: 7px solid rgba(23, 120, 231, 0.5);
     width: 100%;
