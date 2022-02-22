@@ -1,3 +1,4 @@
+
 body {
 
     font-family: 'Poppins', sans-serif;
@@ -11,8 +12,7 @@ margin-bottom:100px;
 }
 body {
 
-font-family: 'Poppins', sans-serif;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -34,18 +34,6 @@ font-family: 'Poppins', sans-serif;
      transition: transform 0.3s ease;
 }
 
-.gen label{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-right: 30px;
-margin-bottom:10px;
-}
-.bdate {
-
-margin-right: 30px;
-margin-bottom:10px;
-}
 
 #form {
     width: 400px;
@@ -60,7 +48,44 @@ margin-bottom:10px;
     color: #0f2027;
     text-align: center;
 }
+.pass{
+visibility: hidden;
+border: 2px solid #f0f0f0;
+border-radius: 4px;
+display: none;
+font-size: 12px;
+margin-left: -10px;
+padding: 10px;
 
+
+width: 100%;
+}
+
+.resseter{
+visibility: hidden;
+border: 2px solid #f0f0f0;
+border-radius: 4px;
+display: none;
+font-size: 12px;
+margin-left: -10px;
+padding: 10px;
+
+
+width: 100%;
+}
+
+.submitter{
+visibility: visible;
+border: 2px solid #f0f0f0;
+border-radius: 4px;
+display: block;
+font-size: 12px;
+margin-left: -10px;
+padding: 10px;
+
+
+width: 100%;
+}
 #form button {
     padding: 10px;
     margin-top: 10px;
@@ -74,6 +99,9 @@ margin-bottom:10px;
 .input-control {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+
 }
 
 .input-control input {
@@ -98,7 +126,6 @@ margin-bottom:10px;
 
 .input-control.error input {
     border-color: #ff3860;
-
 }
 
 .input-control .error {

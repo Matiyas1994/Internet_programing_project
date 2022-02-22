@@ -76,7 +76,7 @@ function  authenticate(passwordValue,emailValue) {
     if (fetchedPassword == passwordValue && fetchedPassword != ''){
       location.href = "../pages/page 3.html";
 
-}else{
-  setError(password, 'incorrect email or password');
-}
+      }else{
+          setError(password, 'incorrect email or password');
+      }
 }

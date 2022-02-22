@@ -58,10 +58,6 @@ const validateInputs = () => {
     dealwithEmail(emailValue);
     const password1 = document.getElementById('password1');
     const passwordValue = password1.value.trim();
-    console.log(passwordValue);
-
-
-
 
     if(passwordValue === '') {
         setError(password1, 'Password is required');
@@ -81,34 +77,20 @@ reset.addEventListener('click', e => {
     const emailValue = email.value.trim();
     const passwordValue = document.getElementById('password1').value.trim();
    if( passwordValue !=' ' && passwordValue.length>8){
-     const dataobj=JSON.parse( localStorage.getItem(emailValue));
+      setpassWord();
 
-       dataobj.password=passwordValue;
-       dataobj.password2=passwordValue;
-       const store =  JSON.stringify(dataobj);
-       console.log(store);
-
-       localStorage.setItem(emailValue,store);
-      // setpassWord(emailValue,passwordValue);
-       location.href = "profile1.html";
+      //  const dataobj=JSON.parse( localStorage.getItem(emailValue));
+      //  dataobj.password=passwordValue;
+      //  dataobj.password2=passwordValue;
+      //  const store =  JSON.stringify(dataobj);
+      //  localStorage.setItem(emailValue,store);
+      // // setpassWord(emailValue,passwordValue);
+      //  location.href = "profile1.html";
    }else{
-     setError(password1, 'password length must be greater than 8');
+     setError(document.getElementById('password1'), 'password length must be greater than 8');
 
 }
 });
-function setpassWord(emailValue,passwordValue){
-  console.log("got here ");
-  const dataobj=JSON.parse( localStorage.getItem(emailValue));
-     console.log(dataobj);
-    dataobj.password=passwordValue;
-    dataobj.password2=passwordValue;
-    const store =  JSON.stringify(dataobj);
-    console.log(store);
-
-    localStorage.setItem(emailValue,store);
-
-
-}
 
 
 function dealwithEmail(emailValue){
@@ -125,5 +107,24 @@ function dealwithEmail(emailValue){
 }else{
     setError(email, 'Email Doesnt exist')
 }
+
+}
+
+
+function setpassWord(){
+    const emailValue = email.value.trim();
+    const passwordValue = document.getElementById('password1').value.trim();
+
+    const dataobj=JSON.parse( localStorage.getItem(emailValue));
+
+    dataobj.password=passwordValue;
+    dataobj.password2=passwordValue;
+    const store =  JSON.stringify(dataobj);
+
+
+    localStorage.setItem(emailValue,store);
+    location.href = "profile1.html";
+
+
 
 }

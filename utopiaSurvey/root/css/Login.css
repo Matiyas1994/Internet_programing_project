@@ -1,3 +1,4 @@
+
 body {
 
     font-family: 'Poppins', sans-serif;
@@ -11,8 +12,7 @@ margin-bottom:100px;
 }
 body {
 
-font-family: 'Poppins', sans-serif;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -34,18 +34,6 @@ font-family: 'Poppins', sans-serif;
      transition: transform 0.3s ease;
 }
 
-.gen label{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-right: 30px;
-margin-bottom:10px;
-}
-.bdate {
-
-margin-right: 30px;
-margin-bottom:10px;
-}
 
 #form {
     width: 400px;
@@ -74,6 +62,9 @@ margin-bottom:10px;
 .input-control {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+
 }
 
 .input-control input {
@@ -98,7 +89,6 @@ margin-bottom:10px;
 
 .input-control.error input {
     border-color: #ff3860;
-
 }
 
 .input-control .error {
